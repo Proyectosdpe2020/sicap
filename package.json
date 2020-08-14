@@ -1,0 +1,27 @@
+{
+  "name": "sicap",
+  "version": "1.0.0",
+  "description": "Capture System",
+  "main": "index.php",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "jquery": "^3.5.1",
+    "mdbootstrap": "^4.19.1",
+    "sidebarjs": "^6.1.0",
+    "bootstrap": "^4.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Proyectosdpe2020/sicap.git"
+  },
+  "author": "DPE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Proyectosdpe2020/sicap/issues"
+  },
+  "homepage": "https://github.com/Proyectosdpe2020/sicap#readme"
+}
