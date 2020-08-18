@@ -4,11 +4,12 @@
   "description": "Capture System",
   "main": "index.php",
   "dependencies": {
-    "normalize.css": "^8.0.1",
+    "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
+    "materialize-css": "^1.0.0-rc.2",
     "mdbootstrap": "^4.19.1",
-    "sidebarjs": "^6.1.0",
-    "bootstrap": "^4.5.2"
+    "normalize.css": "^8.0.1",
+    "sidebarjs": "^6.1.0"
   },
   "devDependencies": {},
   "scripts": {

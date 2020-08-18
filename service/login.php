@@ -10,7 +10,7 @@ $pass = $data['password'];
 if($conn){
     $sql = "SELECT TOP (1)
         * 
-        FROM [sigep].[dbo].[usuario] 
+        FROM [PRUEBA].[dbo].[Usuario] 
         WHERE [usuario] = '$user'
         AND [contrasena] = '$pass'";
 
@@ -33,11 +33,11 @@ if($conn){
         $return = array(
             'state' => 'user_success',
             'user_data' => array(
-                'uid' => $json['uid'],
+                'uid' => $json['UsuarioID'],
                 'username' => $json['usuario'],
-                'name' => $json['nombre'],
-                'paternal_surename' => $json['a_paterno'],
-                'maternal_surename' => $json['a_materno']
+                'name' => $json['Nombre'],
+                'paternal_surename' => $json['Paterno'],
+                'maternal_surename' => $json['Materno']
             )
         );
         
