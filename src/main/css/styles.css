@@ -1,4 +1,22 @@
+@font-face {
+    font-family: LabradorA;
+    font-weight: bold;
+    src: url("../../../fonts/LabradorA-ExtraBold.otf") format("opentype");
+}
 
+@font-face {
+    font-family: Galano;
+    font-weight: bold;
+    src: url("../../../fonts/Galano_Grotesque_Medium.otf") format("opentype");
+}
+
+body{
+    font-family: Verdana;
+}
+
+h1, h2{
+    font-family: LabradorA;
+}
 
 a,
 a:hover,
@@ -12,9 +30,13 @@ a:focus{
 #sidebar{
     min-width: 250px;
     max-width: 250px;
-    background: #7386d5;
+    background: #152F4A;
     color: #ffffff;
     transition: all 0.3s;
+    position: fixed; 
+    height: -webkit-fill-available;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    overflow-x: auto;
 }
 
 #sidebar.active{
@@ -22,9 +44,10 @@ a:focus{
 }
 
 .sidebar-header{
-    padding: 20px;
-    background: #6d7fcc;
+    padding: .5rem 1rem;
+    background: #152F4A;
     text-align: center;
+    border-bottom: 1px solid white;
 }
 
 #sidebar ul.components{
@@ -44,14 +67,14 @@ a:focus{
 }
 
 #sidebar ul li a:hover{
-    color: #7386d5;
+    color: #606060;
     background: #ffffff;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"]{
-    color: #ffffff;
-    background: #6d7fcc;
+    color: #000000;
+    background: #ffffff;
 }
 
 a[data-toggle="collapse"]{
@@ -69,17 +92,46 @@ a[data-toggle="collapse"]{
 ul ul a{
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #7C8B9E !important;
+    border-bottom: 1px solid white;
+}
+
+ul ul a.current{
+    color: chartreuse;
 }
 
 #content{
-    width: 100%;
+    width: -webkit-fill-available;
     /*min-height: 100vh;*/
     transition: all 0.3s;
     margin-left: 250px;
-    padding-top: 57px;;
+    padding-top: 77px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 #content.full{
     margin-left: 0px;
+}
+
+#navbar{
+    position: fixed !important; 
+    width: -webkit-fill-available !important; 
+    z-index: 10000 !important; 
+    transition: all 0.3s !important;
+    margin-left: 250px !important;
+    background-color: #ffffff !important;
+}
+
+#navbar.full{
+    margin-left: 0px !important;
+}
+
+#navbar div ul li a{
+    color: #606060;
+}
+
+#navbar a{
+    color: #606060;
 }

@@ -1,4 +1,4 @@
-<nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color lighten-1" style="position: fixed; width: 100%; z-index: 10000">
+<nav id="navbar" class="mb-1 navbar navbar-expand-lg navbar-dark default-color lighten-1">
 	<a id="sidebarCollapse" class="navbar-brand" href="#" style="border-radius: 1px;">
 		<i class="fas fa-bars"></i>
 	</a>
@@ -10,27 +10,6 @@
 
 	<div class="collapse navbar-collapse" id="navbarSupportedContent-555">
 		<ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
-				<a class="nav-link" href="#">Home
-				<span class="sr-only">(current)</span>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Features</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Pricing</a>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown"
-				aria-haspopup="true" aria-expanded="false">Dropdown
-				</a>
-				<div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
-				<a class="dropdown-item" href="#">Action</a>
-				<a class="dropdown-item" href="#">Another action</a>
-				<a class="dropdown-item" href="#">Something else here</a>
-				</div>
-			</li>
 		</ul>
 		<ul class="navbar-nav nav-flex-icons">
 

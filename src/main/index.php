@@ -32,53 +32,148 @@ if(isset($_SESSION['user_data'])){
     <body>
     
 
-        
+    <script>
+
+
+function current(sm){
+    document.getElementById(sm).addClass('current');
+    $("#1.1").addClass('current');
+    alert("asd");
+}
+
+</script>
 
 
     <?php require('../navigation/navigation.php') ?>
 
-    <nav id="sidebar" style="position: fixed; height: 1000px; margin-top: 57px;">
+    <nav id="sidebar">
 
             <div class="sidebar-header">
-                <h3>Bootstrap slider</h3>
+                <h1>SICAP 2.0</h1>
             </div>
             
             <ul class="lisst-unstyled components">
 
-                <li class="active">
+                
+
+                <li>
+                    <a href="#">Página principal</a>
+                </li>
+
+
+
+                <!--<li class="active">
 
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
 
                     <ul class="collapse lisst-unstyled list-group" id="homeSubmenu">
                         <li class="list-group-item">
-                            <a href="#">Home 1</a>
+                            <a href="#">Página principal</a>
                         
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">Home 2</a>
                         </li>
                     </ul>
 
-                </li>
+                </li>-->
+
+
+
 
                 <li>
-                    <a href="#">About</a>
-                </li>
 
-                <li>
+                <a href="#captureSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-folder-open"></i>&nbsp Captura</a>
 
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-
-                    <ul class="collapse lisst-unstyled" id="pageSubmenu">
+                    <ul class="collapse list-group" id="captureSubmenu">
                         <li>
-                            <a href="#">Page 1</a>
+                            <a href="#"><i class="far fa-circle" id="sm1.1" onclick="current('1.1')"></i>&nbsp Nuevo</a>
                         </li>
                         <li>
-                            <a href="#">Page 2</a>
+                            <a href="#"><i class="far fa-circle" id="sm1.2" onclick="current('1.2')"></i>&nbsp Modificar</a>
                         </li>       
+                        <li>
+                            <a href="#"><i class="far fa-circle" id="sm1.3" onclick="current('1.3')"></i>&nbsp Consultar</a>
+                        </li>     
                     </ul>
                 
                 </li>
+
+                <li>
+
+                    <a href="#searchSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-th-list"></i>&nbsp Consultas</a>
+
+                    <ul class="collapse list-group" id="searchSubmenu">
+                        <li>
+                            <a href="#" class="list-group-item" id="sm2.1" onclick="current('2.1')"><i class="far fa-circle"></i>&nbsp Carpetas</a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-group-item" id="sm2.2" onclick="current('2.2')"><i class="far fa-circle"></i>&nbsp Delitos</a>
+                        </li>       
+                        <li>
+                            <a href="#" class="list-group-item" id="sm2.3" onclick="current('2.3')"><i class="far fa-circle"></i>&nbsp Reportes</a>
+                        </li>    
+                        <li>
+                            <a href="#" class="list-group-item" id="sm2.4" onclick="current('2.4')"><i class="far fa-circle"></i>&nbsp Validaciones</a>
+                        </li>       
+                        <li>
+                            <a href="#" class="list-group-item" id="sm2.5" onclick="current('2.5')"><i class="far fa-circle"></i>&nbsp Busquedas</a>
+                        </li> 
+                         
+                    </ul>
+                
+                </li>
+
+                <li>
+
+                    <a href="#validationSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-check-square"></i>&nbsp Validaciones</a>
+
+                    <ul class="collapse list-group" id="validationSubmenu">
+                        <li>
+                            <a href="#"><i class="far fa-circle"></i>&nbsp Vlidación de captura</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="far fa-circle"></i>&nbsp Alto impacto</a>
+                        </li>       
+                        <li>
+                            <a href="#"><i class="far fa-circle"></i>&nbsp Necropcias</a>
+                        </li>     
+                    </ul>
+                
+                </li>
+
+                <li>
+
+                    <a href="#configurationSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-cog"></i>&nbsp Configuración</a>
+
+                    <ul class="collapse list-group" id="configurationSubmenu">
+                        <li>
+                            <a href="#"><i class="far fa-circle"></i>&nbsp Usuario</a>
+                        </li> 
+                    </ul>
+                
+                </li>
+
+                <!--<li>
+
+                    <a href="#configurationSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Configuración</a>
+
+                    <ul class="list-group collapse lisst-unstyled" id="configurationSubmenu">
+                        <li class="list-group-item active">
+                            <div class="md-v-line"></div><i class="fas fa-laptop mr-4 pr-3"></i> Cras justo odio
+                        </li>
+                        <li class="list-group-item">
+                            <div class="md-v-line"></div><i class="fas fa-bomb mr-5"></i>Dapibus ac facilisis in
+                        </li>
+                        <li class="list-group-item">
+                            <div class="md-v-line"></div><i class="fas fa-code mr-5"></i>Morbi leo risus
+                        </li>
+                        <li class="list-group-item">
+                            <div class="md-v-line"></div><i class="far fa-gem mr-5"></i>Porta ac consectetur ac
+                        </li>
+                        <li class="list-group-item">
+                            <div class="md-v-line"></div><i class="fas fa-cogs mr-5"></i>Vestibulum at eros
+                        </li>
+                    </ul>
+                
+                </li>-->
 
             </ul>
 
@@ -107,10 +202,13 @@ if(isset($_SESSION['user_data'])){
 
         $(document).ready(function(){
             $("#sidebarCollapse").on('click', function(){
+                $("#navbar").toggleClass('full');
                 $("#sidebar").toggleClass('active');
                 $("#content").toggleClass('full');
             });
         });
+
+
 
     </script>
 
