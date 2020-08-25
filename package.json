@@ -5,11 +5,12 @@
   "main": "index.php",
   "dependencies": {
     "bootstrap": "^4.5.2",
+    "datatables.net": "^1.10.21",
+    "datatables.net-dt": "^1.10.21",
     "jquery": "^3.5.1",
     "materialize-css": "^1.0.0-rc.2",
     "mdbootstrap": "^4.19.1",
-    "normalize.css": "^8.0.1",
-    "sidebarjs": "^6.1.0"
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {},
   "scripts": {
